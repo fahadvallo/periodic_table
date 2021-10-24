@@ -1,0 +1,321 @@
+header{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    background: #1c2b2d;
+    margin-top: -100px;
+}
+.per{
+    font-size: 100px;
+    text-align: center;
+}
+.c{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 100px); 
+    grid-template-rows: repeat(5, 40px);
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+}
+
+/*Periodic Table First Part*/
+body{
+    background: #1c2b2d;
+    font-family: "Poppins",sans-serif;
+    margin: 50px;
+    padding: 50px;
+}
+.periodic-table{
+    display: grid;
+    grid-template-columns: repeat(18, 70px);
+    grid-template-rows: repeat(7, 70px);
+    grid-gap: 3px;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: center;
+}
+.periodic-element{
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+.periodic-element .periodic-element-inner{
+    background: #202e38;
+    width: calc(100%);
+    height: calc(100%);
+    transition: inherit;
+}
+.periodic-element .title{
+    font: 700 26.1538461538px "Poppins", sans-serif;
+    text-align: center;
+    margin: -0.2em 0 0;
+    transition: 0.8s ease 600ms;
+}
+.periodic-element .desc{
+    font: 500 12px "Poppins", san-serif;
+    text-align: center;
+    margin-top: -0.4em;
+}
+.periodic-element .no{
+    font: 500 12px "Poppins", san-serif;
+    text-align: center;
+}
+.periodic-element .ato{
+    font: 500 12px "Poppins", san-serif;
+    text-align: center;
+    margin-top: -0.3em;
+}
+.periodic-element:hover{
+    transform: scale(1.12);
+    z-index: 10;
+}
+.periodic-element:hover .periodic-element-inner{
+    background: transparent;
+}
+.periodic-element:hover .title, .periodic-element:hover .desc, .periodic-element:hover .no, .periodic-element:hover .ato{
+    -webkit-text-fill-color: #222;
+}
+.periodic-element:hover::after{
+    top: 105%;
+    opacity: 1;
+}
+.periodic-element{
+    cursor: pointer;
+}
+.empty-space-1{
+    grid-column: 2/span 16;
+    grid-row: 1;
+}
+.empty-space-2{
+    grid-column: 3/span 10;
+    grid-row: 2;
+}
+.empty-space-3{
+    grid-column: 3/span 10;
+    grid-row: 3;
+}
+
+/* Table Second Part*/
+.periodic-table-extra{
+    display: grid;
+    grid-template-columns: repeat(15, 70px);
+    grid-template-rows: repeat(2, 70px);
+    grid-gap: 3px;
+    margin: auto;
+    max-width: 1200px;
+    margin-top: -6em;
+    justify-content: center;
+}
+.periodic-element-extra{
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+.periodic-element-extra .periodic-element-inner-extra{
+    background: #202e38;
+    width: calc(100%);
+    height: calc(100%);
+    transition: inherit;
+}
+.periodic-element-extra .title{
+    font: 700 26.1538461538px "Poppins", sans-serif;
+    text-align: center;
+    margin: -0.2em 0 0;
+    transition: 0.8s ease 600ms;
+}
+.periodic-element-extra .desc{
+    font: 500 12px "Poppins", san-serif;
+    text-align: center;
+    margin-top: -0.4em;
+}
+.periodic-element-extra .no{
+    font: 500 12px "Poppins", san-serif;
+    text-align: center;
+}
+.periodic-element-extra .ato{
+    font: 500 12px "Poppins", san-serif;
+    text-align: center;
+    margin-top: -0.3em;
+}
+.periodic-element-extra:hover{
+    transform: scale(1.12);
+    z-index: 10;
+}
+.periodic-element-extra:hover .periodic-element-inner-extra{
+    background: transparent;
+}
+.periodic-element-extra:hover .title, .periodic-element-extra:hover .desc, .periodic-element-extra:hover .no, .periodic-element-extra:hover .ato{
+    -webkit-text-fill-color: #222;
+}
+.periodic-element-extra:hover::after{
+    top: 105%;
+    opacity: 1;
+}
+.periodic-element-extra{
+    cursor: pointer;
+}
+.empty-space-1-0{
+    grid-column: 1/span 14;
+    grid-row: 1;
+}
+
+/* Color */
+.one{
+    background: linear-gradient(to bottom right,#06a578 0%, #0de9cc 100%);
+}
+.one .title, .one .desc, .one .no, .one .ato, .one .name, .one .n, .one .d, .one .a{
+    background: -webkit-linear-gradient(#06a578, #0de9cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.two{
+    background: linear-gradient(to bottom right,#cdcf32 0%, #e4db8f 100%);
+}
+.two .title, .two .desc, .two .no, .two .ato, .two .name, .two .n, .two .d, .two .a{
+    background: -webkit-linear-gradient(#cdcf32, #e4db8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.three{
+    background: linear-gradient(to bottom right,#ebbd92 0%, #eeb88b 100%);
+}
+.three .title, .three .desc, .three .no, .three .ato, .three .name, .three .n, .three .d, .three .a{
+    background: -webkit-linear-gradient(#ebbd92, #eeb88b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.four{
+    background: linear-gradient(to bottom right,#79a0e4 0%, #4555e4 100%);
+}
+.four .title, .four .desc, .four .no, .four .ato{
+    background: -webkit-linear-gradient(#79a0e4, #4555e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.five{
+    background: linear-gradient(to bottom right,#c05ec4 0%, #ecf1f1 100%);
+}
+.five .title, .five .desc, .five .no, .five .ato{
+    background: -webkit-linear-gradient(#c05ec4, #ecf1f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.six{
+    background: linear-gradient(to bottom right, #a2d2ff 0%,  #a2d2ff 100%);
+}
+.six .title, .six .desc, .six .no, .six .ato{
+    background: -webkit-linear-gradient( #a2d2ff,  #a2d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.seven{
+    background: linear-gradient(to bottom right,#c48983 0%, #ca9393 100%);
+}
+.seven .title, .seven .desc, .seven .no, .seven .ato{
+    background: -webkit-linear-gradient(#c48983, #ff7171);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.eight{
+    background: linear-gradient(to bottom right,#6e9ddb 0%, #13b6b6 100%);
+}
+.eight .title, .eight .desc, .eight .no, .eight .ato{
+    background: -webkit-linear-gradient(#6e9ddb, #13b6b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nine{
+    background: linear-gradient(to bottom right,#eb66c3 0%, #dd47d3 100%);
+}
+.nine .title, .nine .desc, .nine .no, .nine .ato{
+    background: -webkit-linear-gradient(#eb66c3, #dd47d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ten{
+    background: linear-gradient(to bottom right,#fa7f72 0%, #e93d3d 100%);
+}
+.ten .title, .ten .desc, .ten .no, .ten .ato{
+    background: -webkit-linear-gradient(#fa7f72, #e93d3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.eleven{
+    background: linear-gradient(to bottom right,#81c079 0%, #57e463 100%);
+}
+.eleven .title, .eleven .desc, .eleven .no, .eleven .ato{
+    background: -webkit-linear-gradient(#81c079, #57e463);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Credits*/
+footer{
+    background: #1c2b2d;
+    font-family: "Poppins",sans-serif;
+    margin-top: -70px;
+}
+.credit-table{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(1, 100px);
+    grid-gap: 10px;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: center;
+}
+.credit-element{
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+.credit-element .credit-element-inner{
+    background: #202e38;
+    padding: 10px 15px;
+    width: calc(100% 30px);
+    height: calc(100% 20px);
+    transition: inherit;
+}
+.credit-element .name{
+    font: 700 26.1538461538px "Poppins", sans-serif;
+    text-align: center;
+    margin: -0.2em 0 0;
+    transition: 0.8s ease 600ms;
+}
+.credit-element .d{
+    font: 500 14px "Poppins", san-serif;
+    text-align: center;
+    margin-top: -0.1em;
+}
+.credit-element .n{
+    font: 500 14px "Poppins", san-serif;
+    text-align: center;
+}
+.credit-element .a{
+    font: 500 14px "Poppins", san-serif;
+    text-align: center;
+    margin-top: -0.1em;
+}
+.credit-element:hover{
+    transform: scale(1.12);
+    z-index: 10;
+}
+.credit-element:hover .credit-element-inner{
+    background: transparent;
+}
+.credit-element:hover .n, .credit-element:hover .d, .credit-element:hover .name, .credit-element:hover .a{
+    -webkit-text-fill-color: #222;
+}
+.credit-element:hover::after{
+    top: 105%;
+    opacity: 1;
+}
+.credit-element{
+    cursor: pointer;
+}
