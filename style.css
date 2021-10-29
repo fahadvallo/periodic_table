@@ -263,7 +263,7 @@ footer{
 }
 .credit-table{
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(1, 100px);
     grid-gap: 10px;
     margin: auto;
@@ -320,4 +320,8 @@ footer{
 }
 .credit-element{
     cursor: pointer;
+}
+.empty-space-1_0{
+    grid-column: 1/span 2;
+    grid-row: 1;
 }
